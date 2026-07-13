@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <meta name="description" content="了解 Google AdSense，学习如何通过内容创作获得收益。">
+  <style>
+    :root {
+      --primary-color: #6A5ACD; /* 蓝紫色主色 */
+      --accent-color: #9370DB; /* 柔和紫色 */
+      --light-bg: #f9f9ff;     /* 页面背景 */
+      --text-color: #333;
+      --highlight-bg: #f0ecff;
+    }
+
+    body {
+      font-family: "Segoe UI", "PingFang SC", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-bg);
+      color: var(--text-color);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 30px 40px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-top: 1.8rem;
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+
+    .highlight {
+      background-color: var(--highlight-bg);
+      padding: 15px 20px;
+      border-left: 5px solid var(--primary-color);
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    .ad-container {
+      margin: 35px 0;
+      text-align: center;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1.2rem 0;
+      margin-top: 40px;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+    }
+
+    footer p {
+      margin: 0.3rem 0;
+      font-size: 0.95rem;
+    }
+
+    .tips {
+      background: #fff8e1;
+      border-left: 5px solid #ffb300;
+      padding: 12px 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        margin: 15px;
+        padding: 20px;
+      }
+      header h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+
+  <script>
+    // 动态设置标题和域名文本
+    document.addEventListener("DOMContentLoaded", function() {
+      const hostname = window.location.hostname;
+      document.title = hostname;
+      document.querySelectorAll("#site-name, #site-name-footer").forEach(el => {
+        el.textContent = hostname;
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>欢迎访问 <span id="site-name"></span></h1>
+    <p>探索内容变现的世界 · 学会让文字创造价值</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>🌍 什么是 Google AdSense？</h2>
+      <p>
+        <strong>Google AdSense</strong> 是全球最受欢迎的网站广告变现平台。它让网站所有者能够通过展示与网站内容相关的广告，从访问者点击中获得收益。
+      </p>
+      <div class="highlight">
+        💡 简而言之：你创作内容，Google 提供广告，你获得收入。
+      </div>
+      <p>
+        无论你的网站是博客、资讯站、作品展示页，还是个人主页，只要内容健康、有价值，就可以通过 AdSense 进行盈利。
+      </p>
+    </section>
+
+    <div class="ad-container">
+      <!-- 广告位 1 -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6488939036344136"
+     crossorigin="anonymous"></script>
+        <!-- Auto -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6488939036344136"
+             data-ad-slot="4688355284"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <section>
+      <h2>🚀 为什么选择 AdSense？</h2>
+      <div class="highlight">
+        ✅ 自动匹配广告内容 <br>
+        ✅ 全球广告商资源丰富 <br>
+        ✅ 安全透明的收入体系 <br>
+        ✅ 无需手动管理广告投放 <br>
+        ✅ 适合各种规模的网站
+      </div>
+      <p>
+        Google 的 AI 系统会根据页面内容和访客兴趣自动展示最合适的广告。  
+        你不需要懂编程，也无需与广告商谈合作，只要复制广告代码到你的网站，就能开始赚钱。
+      </p>
+    </section>
+
+    <section>
+      <h2>💰 如何开始使用 AdSense？</h2>
+      <ol>
+        <li>准备一个内容网站（例如：<span id="site-name"></span>）</li>
+        <li>前往 <a href="https://www.google.com/adsense/start/" target="_blank">Google AdSense 官网</a> 注册账户</li>
+        <li>等待审核通过，复制广告代码</li>
+        <li>将代码粘贴到页面合适位置，即可开始展示广告</li>
+      </ol>
+      <div class="tips">
+        ⚠️ <strong>提示：</strong> 在申请前，请确保你的网站内容原创、无违规内容、并且结构清晰。
+      </div>
+    </section>
+
+    <div class="ad-container">
+      <!-- 广告位 2 -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6488939036344136"
+     crossorigin="anonymous"></script>
+        <!-- Auto -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6488939036344136"
+             data-ad-slot="4688355284"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <section>
+      <h2>🧠 如何提升收益？</h2>
+      <p>
+        想要提高 AdSense 收益，关键在于「内容质量 + 流量」。  
+        写原创、有用的文章，持续更新，让访问者停留更久、点击更多广告。
+      </p>
+      <div class="highlight">
+        📈 优化方向：  
+        - 使用清晰的网站结构  
+        - 定期更新原创内容  
+        - 提高用户互动和回访率  
+        - 合理放置广告位置  
+      </div>
+    </section>
+
+    <section>
+      <h2>💡 内容创造价值</h2>
+      <p>
+        每一次创作，都是积累数字资产的机会。  
+        Google AdSense 只是一个开始，通过优质内容，你不仅能获得广告收益，还能建立品牌、吸引用户、实现长期成长。
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 <span id="site-name-footer"></span> · 内容创造价值</p>
+  </footer>
+</body>
+</html>
